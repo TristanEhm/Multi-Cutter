@@ -14,6 +14,8 @@ import java.util.function.Function;
 
 public class MultiCutterBlocks {
     private static Block register(String name, Function<AbstractBlock.Settings, Block> blockFactory, AbstractBlock.Settings settings, boolean shouldRegisterItem) {
+
+        MultiCutter.LOGGER.info("Registering Mod Blocks for " + MultiCutter.MOD_ID);
         // Create a registry key for the block
         RegistryKey<Block> blockKey = keyOfBlock(name);
         // Create the block instance

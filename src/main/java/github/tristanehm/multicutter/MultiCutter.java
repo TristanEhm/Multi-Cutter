@@ -15,7 +15,6 @@ public class MultiCutter implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		//MultiCutterItems.initialize();
         MultiCutterBlocks.initialize();
 	}
 }
